@@ -32,8 +32,9 @@ public enum OrderEvent implements ProcessEvent {
     	 * So return null 
     	 */
         @Override
-        public Class<? extends Processor> nextStepProcessor(ProcessEvent event) {
-            return null;
+        public Class<? extends Processor> nextStepProcessor(ProcessEvent event) throws InterruptedException {
+            Thread.sleep(15000);
+        return null;
         }
         
         @Override

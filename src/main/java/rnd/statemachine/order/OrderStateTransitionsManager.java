@@ -46,6 +46,8 @@ public class OrderStateTransitionsManager extends AbstractStateTransitionsManage
             log.info("Final state: " + dbService.getStates().get(data.getOrderId()).name());
             log.info("??*************************************");
             throw new OrderException(((OrderEvent) data.getEvent()).name(), e);
+        } catch (InterruptedException e) {
+            throw new RuntimeException(e);
         }
         return data;
     }
