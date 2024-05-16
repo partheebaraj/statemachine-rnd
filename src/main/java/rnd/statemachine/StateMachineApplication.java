@@ -8,7 +8,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  * Includes a framework and a sample application of the framework
  * to an online order process
  * 
- * @author Nalla Senthilnathan https://github.com/mapteb/simple-state-machine
+ *
  *
  */
 @SpringBootApplication
